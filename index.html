@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+<style>
+.element {
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.row:hover .element{
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(.18, 1.03, .5, 1.62);
+  animation-timing-function: cubic-bezier(.18, 1.03, .5, 1.62);
+}
+
+.element-2 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.element-3 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.element-4 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    background-color: orange;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #0099CC;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    background-color: orange;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #0099CC;
+  }
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-toggleable-sm bg-info navbar-dark">
+    <div class="container">
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="./cv/indexCv.html" target="_blank">Traditional CV</a>
+          <a class="nav-item nav-link" href="./portfolio/indexPorfolio.html" target="_blank">Portfolio</a>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #aaa;">
+    <div class="container">
+      <h1 class="display-3">Rubén López</h1>
+      <p class="lead">Junior Software Developer looking for a great oportunity.....</p>
+    </div>
+  </div>
+
+  <div class="container text-muted">
+    <!-- cards -->
+    <div class="row text-center text-justify">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card element element-1">
+          <img src="/java.jpg" class="card-img-top img-fluid" alt="node" style="height: 200px;">
+          <div class="card-block" style="height: 100px;">
+            <h3 class="card-title">Java Developer</h3>
+            <p>1Z0-811 Oracle Certification
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card element element-2">
+          <img src="/html.jpg" class="card-img-top " alt="node" style="height: 200px;">
+          <div class="card-block" style="height: 100px;">
+            <h3 class="card-title">HTML CSS JS</h3>
+            <p>98-383 Microsoft and<br> 1D0-620 CIW Certifications</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card element element-3">
+          <img src="/bootstrap.jpg" class="card-img-top img-fluid" alt="node" style="height: 200px;">
+          <div class="card-block" style="height: 100px;">
+            <h3 class="card-title ">Bootstrap Developer</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card element element-4">
+          <img src="/react.png" class="card-img-top img-fluid" alt="node" style="height: 200px;">
+          <div class="card-block" style="height: 100px;">
+            <h3 class="card-title">React<br> Developer</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-4 text-center py-5 my-4">More Information</h2>
+
+    <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+      <a class="nav-link active" href="#address" data-toggle="tab">Address</a>
+      <a class="nav-link" href="#phone" data-toggle="tab">Contact</a>
+      <a class="nav-link" href="#interests" data-toggle="tab">Interests</a>
+      <a class="nav-link" href="#profile" data-toggle="tab">Profile</a>
+    </nav>
+
+    <div class="tab-content py-5">
+      <div class="tab-pane active" id="address">
+        <h3>Adress</h3><br>
+        <p> 31 The Crescent, Harbour Heights, <span data-toggle="tooltip" title="important" class="text-info">Passage
+            West </span>, County Cork</p>
+      </div>
+      <div class="tab-pane" id="phone">
+        <h3>Contact</h3><br>
+        <p>Phone number: 0868480455</p>
+        <p>Email address: rubenlopezb@gmail.com</p>
+      </div>
+      <div class="tab-pane" id="interests">
+        <h3>Interests</h3>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Travelling: I thoroughly enjoy traveling to different countries and having the
+            experience to explore the cultures including their traditions.</li>
+          <li class="list-group-item">Cooking: I have a passion for food and I enjoy cooking different dishes regularly.
+          </li>
+          <li class="list-group-item">Soccer: I play indoor soccer with a group of friends on a weekly basis and enjoy
+            watching soccer matches for leisure</li>
+          <li class="list-group-item">Current Affairs: Keeping updated with daily and global news.</li>
+
+        </ul>
+      </div>
+      <div class="tab-pane" id="profile">
+        <h3>Profile</h3><br>
+        <p>Dedicated and conscientious individual with strong organizational and technical skills. Highly motivated with
+          the ability to work well on my own and as part of a team. Experienced in carrying out tasks under pressure
+          while achieving targets. Ensuring best practice and confidentiality throughout. I am considered to have a
+          positive attitude and an enthusiasm to learn and undertake new challenges.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+  </script>
+</body>
+
+</html>
